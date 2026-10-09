@@ -5,118 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Súper - Parte 1</title>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background: #f1f5f2;
-            color: #26352b;
-            padding: 50px 20px;
-        }
-
-        .container {
-            max-width: 600px;
-            margin: auto;
-            background: white;
-            padding: 35px;
-            border-radius: 22px;
-            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .icono {
-            font-size: 45px;
-            margin-bottom: 10px;
-        }
-
-        h1 {
-            color: #267447;
-            font-size: 30px;
-            margin-bottom: 10px;
-        }
-
-        header p {
-            color: #829087;
-        }
-
-        .tarjeta {
-            background: #f8faf8;
-            border: 1px solid #e4ece5;
-            padding: 22px;
-            border-radius: 15px;
-            margin-bottom: 18px;
-        }
-
-        h2 {
-            font-size: 19px;
-            margin-bottom: 17px;
-            color: #267447;
-        }
-
-        ul {
-            list-style: none;
-        }
-
-        li {
-            background: white;
-            padding: 14px;
-            margin-bottom: 9px;
-            border-radius: 9px;
-            border: 1px solid #e8eee9;
-        }
-
-        li span {
-            display: inline-block;
-            color: #267447;
-            font-weight: bold;
-            margin-right: 12px;
-        }
-
-        .tarjeta p {
-            margin-bottom: 12px;
-            line-height: 1.5;
-        }
-
-        .tarjeta p:last-child {
-            margin-bottom: 0;
-        }
-
-        strong {
-            color: #267447;
-        }
-
-        .footer {
-            text-align: center;
-            color: #98a39b;
-            font-size: 12px;
-            margin-top: 25px;
-        }
-
-        @media (max-width: 480px) {
-            .container {
-                padding: 22px;
-            }
-
-            h1 {
-                font-size: 26px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <main class="container">
-
         <header>
             <div class="icono">🛒</div>
             <h1>Lista de Súper</h1>
@@ -134,45 +26,13 @@
 
         <section class="tarjeta">
             <h2>Consultas del arreglo</h2>
-            <p>Primer producto: <strong id="primero"></strong></p>
-            <p>Último producto: <strong id="ultimo"></strong></p>
-            <p>Cantidad de productos: <strong id="cantidad"></strong></p>
+            <p>Primer producto: <strong>Sal</strong></p>
+            <p>Último producto: <strong>Arroz</strong></p>
         </section>
 
-        <p class="footer">U11 · JAVASCRIPT · ARRAYS</p>
-
+        <p class="footer">U11 · JAVASCRIPT</p>
     </main>
 
-    <script>
-        // 1. Crear un arreglo vacío
-        let listaDeSuper = [];
-
-        // 2. Agregar tres productos mediante índices
-        listaDeSuper[0] = "sal";
-        listaDeSuper[1] = "leche";
-        listaDeSuper[2] = "arroz";
-
-        // Mostrar el arreglo completo
-        console.log(listaDeSuper);
-
-        // 3. Imprimir el primer elemento
-        console.log(listaDeSuper[0]);
-
-        // 4. Calcular la posición del último elemento
-        let ultimoElemento = listaDeSuper.length - 1;
-
-        // 5. Mostrar el último producto usando la variable
-        console.log(listaDeSuper[ultimoElemento]);
-
-        // Mostrar los resultados en la página
-        document.getElementById("primero").textContent =
-            listaDeSuper[0];
-
-        document.getElementById("ultimo").textContent =
-            listaDeSuper[ultimoElemento];
-
-        document.getElementById("cantidad").textContent =
-            listaDeSuper.length;
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
